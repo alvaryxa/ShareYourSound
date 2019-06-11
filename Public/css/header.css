@@ -1,0 +1,58 @@
+header {
+  position: absolute;
+  padding: 1em;
+  z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: calc(100% - 2em);
+  background: white;
+}
+
+header a {
+  size: 50px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header a:hover {
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header a.logo:hover,
+header a.orangeHeader:hover {
+  color: #f94d4d;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header li a {
+  padding: 1em;
+}
+@media only screen and (min-width: 1020px) {
+  header {
+    background: none;
+  }
+  header a {
+    color: white;
+  }
+}

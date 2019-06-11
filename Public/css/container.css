@@ -1,0 +1,145 @@
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+  grid-template-columns: auto;
+}
+
+.wrapper section {
+  padding: 3em;
+}
+
+.wrapper section h1,
+.wrapper section h2,
+.wrapper section .read-btn {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.wrapper section h2 {
+  font-size: 1.4rem;
+}
+
+.wrapper section h1 {
+  color: white;
+}
+
+.wrapper section .read-btn {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background: url(.././pictures/Triangle.svg) no-repeat;
+  background-size: 8px;
+  background-position: 0 1px;
+  padding-left: 1em;
+}
+
+.wrapper section a.secondary:hover {
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.wrapper section .clipper {
+  overflow: hidden;
+}
+
+.wrapper section.hero {
+  padding-top: 8em;
+  background: url(.././pictures/Template.png);
+  background-size: cover;
+}
+
+.wrapper section.hero p {
+  width: 70%;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  color: white;
+}
+
+.wrapper section.hero h1 {
+  font-size: 2.4rem;
+}
+
+.wrapper section.sidebar,
+.wrapper section.subscribe {
+  font-size: 0.9rem;
+  line-height: 1.6em;
+}
+
+.wrapper section.sidebar {
+  background: #f94d4d;
+}
+
+.wrapper section.sidebar .read-btn {
+  margin-top: 2em;
+  display: block;
+  background-position: 0 0.2em;
+}
+
+.wrapper section.sidebar h2,
+.wrapper section.sidebar p {
+  color: white;
+}
+
+.wrapper section.subscribe input {
+  width: calc(100% - 2em);
+  padding: 1em;
+  font-family: "Montserrat";
+  margin-bottom: 1em;
+}
+
+.wrapper section.subscribe button {
+  cursor: pointer;
+  font-size: 25px;
+  border-radius: 20px;
+  height: 98px;
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 1em;
+  margin-top: 0.2em;
+  margin-bottom: 0;
+  border: none;
+  font-family: "Montserrat";
+}
+
+.wrapper section.subscribe button:hover {
+  background: #f94d4d;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.orange {
+  color: orange;
+  background: none;
+}
+@media only screen and (min-width: 1020px) {
+  .wrapper {
+    -ms-grid-columns: 70% auto;
+    grid-template-columns: 70% auto;
+    -ms-grid-rows: 60% auto;
+    grid-template-rows: 60% auto;
+    grid-template-areas:
+      "hero featured"
+      "hero subscribe";
+    height: 100vh;
+  }
+  section.hero {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: hero;
+  }
+  section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .whiteText {
+    color: white;
+  }
+}

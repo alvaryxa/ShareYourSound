@@ -1,0 +1,24 @@
+body {
+  background: url(../pictures/action-blur-close-up-735911.png);
+  width: 100%;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.signUpContainer {
+  margin-top: 100px;
+  width: 100%;
+  min-height: 800px;
+  background: #3e3d3d;
+  opacity: 0.8;
+}
+h1 {
+  justify-self: center;
+  font-size: 50px;
+}
+@media only screen and (min-width: 1020px) {
+  .signUpContainer {
+    width: 50%;
+  }
+}
